@@ -1,0 +1,8 @@
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+a:hover{
+    font-size: larger;
+    color:rgb(75, 179, 214);
+}
