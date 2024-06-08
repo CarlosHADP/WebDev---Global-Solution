@@ -11,6 +11,6 @@ entrar.addEventListener("click", function(){
         alert("Senha icorreta")
     }
     if(nomes.includes(user.value) && senhas.includes(senha.value)){
-        window.location.href = "All Pages/Landing page - GS/src/home/index.html"
+        window.location.href = "/All Pages/Landing page - GS/src/home/index.html"
     }
 })
