@@ -1,8 +1,126 @@
 a{
     text-decoration: none;
-    color: #ccc;
+    color: #fff;
 }
-a:hover{
+.container{
+    display:flex;
+    flex-flow:column wrap;
+    
+}
+nav ul a:hover{
     font-size: larger;
     color:rgb(75, 179, 214);
+}
+ul{
+    padding-right: 1.4rem;
+}
+
+
+body{
+    display:flex;
+    flex-wrap:wrap;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262b27;
+    color: white;
+}
+
+
+.logo-e-nome{
+    display:flex;
+    flex-flow:wrap;
+    align-items:center;
+    gap: 1rem;
+}
+
+ul{
+    display:flex;
+    list-style-type: none;
+    gap: 0.85rem;
+}
+
+main{
+    display:flex;
+    padding-top: 3.4rem;
+    flex-flow:column wrap;
+    width: 100vw;
+    background-color: #595959;
+    color: #ccc;
+}
+
+.secao{
+    border-bottom: 1px solid #fff;
+}
+.secao h4{
+    color: #000;
+}
+.secao img{
+    max-width: 300px;
+    border-radius: 2rem;
+}
+footer{
+    display:flex;
+    width: 100vw;
+    min-height: 15vh;
+    max-height: 40vh;
+    background-color: #262b27;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap:wrap;
+    
+}
+footer a:hover{
+    font-size: larger;
+    color:rgb(75, 179, 214);
+}
+/* @media screen and (max-width: 790){
+    main{
+        padding-top: 15rem;
+    }
+} */
+@media screen and (max-width:527){
+    ul{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    img{
+        max-width:150px
+    }
+}
+@media (max-width:793){
+    img{
+        max-width: 200px;
+
+    }
+}
+#indicator{
+    background-color: #FF4754;
+    height: .35rem;
+    width: 0;
+    position: fixed;
+    top: 0;
+}
+.carrossel{
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height:500px;
+    width: 500px;
+}
+.conteudo{
+    display:flex;
+    transition: transform 0.5s easy-in-out;
+    transform: translateX(0);
+}
+.conteudo img{
+    object-fit: cover;
+    height:500px;
+    width:500px;
 }
